@@ -1,0 +1,10 @@
+---
+layout: default
+title: Archive
+---
+
+<ul>
+{% for post in site.posts %}
+		<li><time class="datetime" datetime="{{ post.date | date_to_xmlschema }}"><span class="dt">{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}</span> <span class="tz">{{ post.date | date: "%Z" }}</span></time> — <a class="counter" href="{{ post.id }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
