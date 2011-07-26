@@ -22,7 +22,7 @@ layout: nil
    <id>http://tobiashieta.com/{{ post.id }}.html</id>
    <content type="xhtml" xml:lang="{% if post.lang %}{{ post.lang }}{% else %}en{% endif %}" xml:base="http://tobiashieta.com/">
     <div xmlns="http://www.w3.org/1999/xhtml">
-     {{ post.content }}
+     {{ post.content | xml_escape }}
     </div>
    </content>
  </entry>
