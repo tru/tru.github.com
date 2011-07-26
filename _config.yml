@@ -3,4 +3,5 @@ destination: _site
 pygments: true
 multiviews: true
 markdown: kramdown
+permalink: /:year/:month/:day/:title
 ---
