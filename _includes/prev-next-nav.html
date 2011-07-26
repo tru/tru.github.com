@@ -1,0 +1,10 @@
+<nav>
+<ul class="blognav">
+  {% if page.previous.url != null %}<li class="previous"><a href="{{ page.previous.url }}"
+    title="Previous Post: “{{ page.previous.title | xml_escape }}” (access key “p”)"
+    accesskey="p" rel="previous"><span class="accesskey">P</span>rev</a></li>{% endif %}
+  {% if page.next.url != null %}<li class="next"><a href="{{ page.next.url }}"
+    title="Next Post: “{{ page.next.title | xml_escape }}” (access key “n”)"
+    accesskey="n" rel="next"><span class="accesskey">N</span>ext</a></li>{% endif %}
+</ul>
+</nav>

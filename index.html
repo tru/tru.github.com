@@ -1,0 +1,14 @@
+---
+layout: default
+title: Journal
+---
+
+{% for post in site.posts limit: 5 %}
+	{% if post.category != "code" %}
+		<article class="article-list">
+	    	<h2 id="{{ post.id }}"><a href="{{ post.id }}.html" rel="canonical" title="Link to “{{ post.title | xml_escape }}”: Posted on {{ post.date | date_to_long_string }}">{{ post.title }}</a></h2>
+		    {{ post.content }}
+			<p class="datetime">Posted @ <time class="datetime" datetime="{{ post.date | date_to_xmlschema }}"><span class="dt">{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}</span> <span class="tz">{{ post.date | date: "%Z" }}</span></time> — <a class="counter" href="{{ post.id }}.html">Permalink</a></p>
+	  	</article>
+	{% endif %}
+{% endfor %}

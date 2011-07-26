@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>tobiashieta.com</title>
+ <link href="http://tobiashieta.com/blogfeed.atom" rel="self"/>
+ <link href="http://tobiashieta.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://tobiashieta.com/</id>
+ <author>
+   <name>Tobias Hieta</name>
+   <email>tobias@hieta.se</email>
+ </author>
+ {% for post in site.posts limit: 15 %}
+ {% if post.category != "code" %}
+ <entry>
+   <title type="html">{{ post.title | xml_escape }}</title>
+   <link rel="alternate" href="http://tobiashieta.com/{{ post.id }}.html"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://tobiashieta.com/{{ post.id }}.html</id>
+   <content type="xhtml" xml:lang="{% if post.lang %}{{ post.lang }}{% else %}en{% endif %}" xml:base="http://tobiashieta.com/">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+     {{ post.content }}
+    </div>
+   </content>
+ </entry>
+ {% endif %}
+ {% endfor %}
+</feed>

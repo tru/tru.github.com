@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-language" content="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}">
+    <title>{{ page.title | xml_escape }}{% if page.title != "tobiashieta.com" %} — tobiashieta.com{% endif %}</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="author" content="Tobias Hieta &lt;tobias@hieta.se&gt;" />
+    <meta name="copyright" content="Copyright © 2000-{{ site.time | date: "%Y" }} Tobias Hieta &lt;tobias@hieta.se&gt;" />
+
+    <link rel="license" type="text/html" title="Creative Commons Attribution 3.0 Unported License" href="http://creativecommons.org/licenses/by/3.0/" />
+    <link rel="author" type="text/html" title="About Tobias Hieta" href="http://tobiashieta.com/about" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Blog Feed" href="http://feeds.feedburner.com/tobiashieta" />
+    <link rel="stylesheet" href="/screen.css" type="text/css" media="screen" />
+<!--    {% include google.html %}-->
+    <script language="javascript" type="text/javascript" src="/justify.js"></script>
+  </head>
+  <body>
+    <div id="content">
+    <header><p><a href="/">tobiashieta.com</a> | <a href="/about.html">about</a> | <a href="/code.html">code</a></p></header>
+
+    <h1 id="top">{{ page.title | xml_escape }}</h1>
+    {{ content }}
+    </div>
+
+    <script language="javascript" type="text/javascript" defer>
+      window.onload = window.setTimeout("Justify('logo_text', 'logo_subtext')", 0);
+    </script>
+
+  </body>
+</html>

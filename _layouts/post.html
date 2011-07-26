@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article>
+  {{ content }}
+  <p class="datetime">Posted @ <time class="datetime" datetime="{{ page.date | date_to_xmlschema }}"><span class="dt">{{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</span> <span class="tz">{{ page.date | date: "%Z" }}</span></time></p>
+</article>
+{% include prev-next-nav.html %}
+

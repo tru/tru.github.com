@@ -1,0 +1,16 @@
+---
+layout: default
+title: Code
+---
+
+{% for post in site.posts %}
+	{% if post.category == "code" %}
+		<article class="article-list">
+	    	<h2 id="{{ post.id }}"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+		    {{ post.content }}
+		    {% if post.ituneslink %}
+				<a href="{{ post.ituneslink }}"><img class="noborder" src="/images/app_store_badge.png"></a>
+		    {% endif %}
+		    </article>
+	{% endif %}
+{% endfor %}

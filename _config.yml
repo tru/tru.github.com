@@ -1,0 +1,6 @@
+---
+destination: _site
+pygments: true
+multiviews: true
+markdown: kramdown
+---
