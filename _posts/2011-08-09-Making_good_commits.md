@@ -118,8 +118,6 @@ index efa5161..aa276c6 100644
 +    def csvSemiColon(self):
 +        returnData = "\n".join([";".join(line) for line in self.source])
 +        return returnData
-+        
-+        
          
  if __name__ == "__main__":
      a = [["Jonas", "1234567"], ["Anders", "9757272"]]
