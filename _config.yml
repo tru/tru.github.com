@@ -1,8 +1,8 @@
 ---
-destination: _site
-pygments: true
-multiviews: true
-markdown: kramdown
-permalink: /:year/:month/:day/:title
+name: Tobias Hieta
+description: Personal page of Tobias Hieta
+highlighter: rouge
+permalink: pretty
+url: https://hieta.se
 exclude: draft.sh
 ---
