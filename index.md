@@ -15,6 +15,8 @@ I have written and talked about what I do at Plex at several occations, you can 
   * Talk at [SwedenCPP](https://www.swedencpp.se/) in Stockhlom.
 * [Preparing Plex Media Server for the next 10 years](https://medium.com/plexlabs/preparing-plex-media-server-for-the-next-10-years-d54fc3f47bf) (medium.com)
   * Blog post on the Plex Labs blog
+* [Tobias Hieta interview @ ergodox-ez.com](https://people.ergodox-ez.com/tobias-hieta/) (ergodox-ez.com)
+  * I was interviewed about my setup by Erez Zuckerman of ergodox-ez.com
 
 ### Kodsnack
 
