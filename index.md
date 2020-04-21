@@ -9,6 +9,8 @@ I am programmer and build-tools wrangler at [Plex](https://plex.tv). This is a c
 I am working at Plex as the lead of build systems and toolchain.
 I have written and talked about what I do at Plex at several occations, you can find links to my talks and my writings below.
 
+* [Fler företagare vill införa permanent distansarbete för sina medarbetare](https://www.fokus.se/2020/04/fler-foretagare-vill-permanent-infora-distansarbete-for-sina-medarbetare/) (fokus.se)
+  * I was interviewed in (Swedish) Fokus Magasin about remote work. Some interesting discussion on how I feel about remote work.
 * Compile C++ faster with Clang. [Notes](https://gist.github.com/tru/ad677ba2b1d543e238b0e09eb3aad3ac), Video is coming soon.
   * Talk at [SwedenCPP](https://www.swedencpp.se/) in Stockholm.
 * [Managing dependencies and toolchains with Conan and Artifactory](https://www.youtube.com/watch?v=jKG6cETLN3M) (youtube)
