@@ -11,7 +11,7 @@ I have written and talked about what I do at Plex at several occations, you can 
 
 * [Fler företagare vill införa permanent distansarbete för sina medarbetare](https://www.fokus.se/2020/04/fler-foretagare-vill-permanent-infora-distansarbete-for-sina-medarbetare/) (fokus.se)
   * I was interviewed in (Swedish) Fokus Magasin about remote work. Some interesting discussion on how I feel about remote work.
-* Compile C++ faster with Clang. [Notes](https://gist.github.com/tru/ad677ba2b1d543e238b0e09eb3aad3ac), Video is coming soon.
+* [Compile C++ faster with Clang](https://www.youtube.com/watch?v=X4pyOtawqjg). [Notes](https://gist.github.com/tru/ad677ba2b1d543e238b0e09eb3aad3ac)
   * Talk at [SwedenCPP](https://www.swedencpp.se/) in Stockholm.
 * [Managing dependencies and toolchains with Conan and Artifactory](https://www.youtube.com/watch?v=jKG6cETLN3M) (youtube)
   * Talk at [SwampUP 2018](https://swampup.jfrog.com/) in Napa, California.
